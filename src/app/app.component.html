@@ -1,1 +1,14 @@
 <h1>Understanding Angular Structural Directives</h1>
+
+<section *carousel="let img from images autoplay 'on' withDelay 2000">
+  <!--<img [src]="image">-->
+  <!--<button (click)="ctrl.prev()">Previous</button>-->
+  <!--<button (click)="ctrl.next()">Next</button>-->
+  <p>content {{ img }}</p>
+</section>
+
+<!--
+  a. let image -> template variable
+  b. from      -> binding key, name it however you want
+  c. images    -> value passed into the directive
+-->
